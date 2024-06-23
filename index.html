@@ -2,11 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Excel</title>
   </head>
   <body>
+    <div class="page-actions-cont">
+      <div class="page-action" role="button" tabindex="0">Home</div>
+      <div class="page-action" role="button" tabindex="0">File</div>
+      <div class="page-action" role="button" tabindex="0">Insert</div>
+      <div class="page-action" role="button" tabindex="0">Layout</div>
+      <div class="page-action" role="button" tabindex="0">Help</div>
+    </div>
+    <div class="cellprop-actions-cont" aria-label="Cell properties">
+      <button aria-label="Copy" class="material-icons">content_copy</button>
+      <button aria-label="Cut" class="material-icons">content_cut</button>
+      <button aria-label="Paste" class="material-icons">content_paste</button>
+      <select class="font-family-prop" aria-label="Font Family">
+        <option value="monospace">MonoSpace</option>
+        <option value="sans-serif">Sans-serif</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="cursive">Cursive</option>
+      </select>
+      <select class="font-size-prop" aria-label="Font Size">
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+      </select>
+      <button aria-label="Bold" class="material-icons">format_bold</button>
+      <button aria-label="Italic" class="material-icons">format_italic</button>
+      <button aria-label="Underline" class="material-icons">
+        format_underlined
+      </button>
+      <button aria-label="Align Left" class="material-icons">
+        format_align_left
+      </button>
+      <button aria-label="Align Center" class="material-icons">
+        format_align_center
+      </button>
+      <button aria-label="Align Right" class="material-icons">
+        format_align_right
+      </button>
+    </div>
+    <div class="formula-actions-cont" aria-label="Formula bar">
+      <input
+        type="text"
+        readonly
+        class="address-bar"
+        aria-label="Cell Address"
+      />
+      <img
+        class="formula-icon"
+        src="https://img.icons8.com/ios/50/000000/formula-fx.png"
+        alt="Formula"
+      />
+      <input type="text" class="formula-bar" aria-label="Formula Input" />
+    </div>
+    <div class="grid-cont" aria-label="Spreadsheet Grid"></div>
+    <div class="sheet-actions-cont" aria-label="Sheet Actions">
+      <div class="sheet-add-icon" role="button" tabindex="0">
+        <span class="material-icons"> post_add </span>
+      </div>
+      <div class="sheets-folder-cont" aria-label="Sheets">
+        <div class="sheet-folder" role="button" tabindex="0">Sheet 1</div>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
